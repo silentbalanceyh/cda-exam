@@ -1,4 +1,4 @@
-
+import lightgbm
 from lightgbm import LGBMClassifier
 from examination.toolkit import *
 
@@ -26,7 +26,17 @@ class ModLightGBM(Mod):
             learning_rate=0.02,         # 学习速率
             metric='logloss',           # 模型度量标准
         )
-        model.fit(train_x, train_y, eval_set=[(test_x, test_y)], eval_metric='l1', early_stopping_rounds=5)
+        model.fit(train_x, train_y,
+            eval_set=[(test_x, test_y)],
+            eval_metric='l1',
+            # < 4.0.0 的时候使用下边参数
+            # early_stopping_rounds=10
+            # > 4.0.0 则要使用如下
+            callbacks=[
+                lightgbm.early_stopping(stopping_rounds=100)
+            ]
+        )
+
         duration = time.time() - timeStart
         log_info("（ModLightGBM）分数：%s, 耗时 %.2f" % (model.score(test_x, test_y), duration))
         # 保存当前模型（固定文件名）

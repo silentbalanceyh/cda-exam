@@ -1,3 +1,4 @@
+import lightgbm
 from lightgbm import LGBMClassifier
 
 from examination.toolkit import *
@@ -27,7 +28,16 @@ class ModVLightGBM(Mod):
             # scale_pos_weight = 100,
             # imbalance issue
         )
-        model.fit(train_x, train_y, eval_set=[(test_x, test_y)], early_stopping_rounds=5)
+        model.fit(train_x, train_y,
+                  eval_set=[(test_x, test_y)],
+                  # < 4.0.0 的时候使用下边参数
+                  # early_stopping_rounds=10
+                  # > 4.0.0 则要使用如下
+                  callbacks=[
+                      lightgbm.early_stopping(stopping_rounds=100)
+                  ]
+                  )
+    
         duration = time.time() - timeStart
         log_info("（ModVLightGBM）分数：%s, 耗时 %.2f" % (model.score(test_x, test_y), duration))
         # 保存当前模型（固定文件名）

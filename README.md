@@ -74,6 +74,52 @@ numpy -> 1.26.3
 |`toolkit_i_`| （toolkit内部使用）功能包：类定义、文件读写、日志记录。  |
 |`toolkit_o_`| （多被 phase 外部调用）功能包：分词、数据集划分、分词处理、矩阵运算。|
 
-### 3.3. 入口配置
+## 4. 使用
+
+```python
+import examination as ex
+```
+
+如果环境配置正确，那么您就可以直接使用上述代码导入 `examination` 的专用库（自定义）。
+
+### 4.1. 案例结构
+
+目录和文件说明
+
+| 目录/文件            | 含义                                 |
+|:-----------------|:-----------------------------------|
+| data             | 数据文件目录。                            |
+| model            | 建模专用目录。                            |
+| runtime | 运行专用目录。|
+| `__init.py__`    | Python 语言规范下的 package 专用目录。        |
+| `constant.py`    | 可配置的常量定义。                          |
+| `exam_kit.py`    | 考试工具，`runner` 会调用定义的函数，方便读者了解内部流程。 |
+| `exam_runner.py` | （主脚本）执行脚本。                         |
+| `report.py`      | 多算法比较目录，在部分场景中可对比不同算法针对数据集的结果。     |
+
+执行步骤如下：
+
+1. 打开 `exam_runner.py` 脚本。
+2. 将五个步骤对应的内容注释掉：
+
+    ```python
+    # 步骤1 - Splitting
+    # run_splitting()
+    
+    # 步骤2 - Feature
+    # run_feature()
+    
+    # 步骤3 - Modeling
+    # run_model()
+    
+    # 步骤4 - Predict
+    # run_predict()
+    
+    # 步骤5 - Score
+    # run_score()
+    ```
+3. 最终考试的时候，将原始数据集直接执行 `run_predict()` 的预测即可。
+
+### 4.2. 核心类
 
 考试库中最核心的一个类为 `Actor`（ `actor_runner.py` 中定义 ）
