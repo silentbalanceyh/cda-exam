@@ -1,0 +1,16 @@
+.ipynb_checkpoints
+__pycache__
+.idea
+.spyproject
+# Markdown
+.Archive
+.markeditor
+.auto_links.json
+~$*.xlsx
+.trash
+*.model
+*.encoder
+*.word2vec
+*.npy
+runtime
+catboost_info
