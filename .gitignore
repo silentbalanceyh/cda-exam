@@ -14,3 +14,4 @@ __pycache__
 *.npy
 runtime
 catboost_info
+~*.pptx
