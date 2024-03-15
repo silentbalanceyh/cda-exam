@@ -100,9 +100,10 @@ import examination as ex
 
 案例说明
 
-| 案例                          | 含义     |
-|:----------------------------|:-------|
-| `runner_binary_categorical` | 二分类案例。 |
+| 案例                          | 含义                   |
+|:----------------------------|:---------------------|
+| `runner_binary_categorical` | 二分类案例，常用Excel标准输入格式。 |
+| `runner_binary_numerical`   | 二分类案例，数值输入格式。        |
 
 ### 4.2. 执行流程
 
@@ -128,7 +129,3 @@ import examination as ex
     # run_score()
     ```
 3. 最终考试的时候，将原始数据集直接执行 `run_predict()` 的预测即可。
-
-### 4.3. 核心类
-
-考试库中最核心的一个类为 `Actor`（ `actor_runner.py` 中定义 ）
