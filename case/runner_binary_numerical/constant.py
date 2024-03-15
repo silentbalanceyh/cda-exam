@@ -24,7 +24,7 @@ import examination as ex
 # V_TARGETS                                                 - 目标属性（多个）
 V_ID = "CustomerID"
 V_TARGET = "SeriousDlqin2yrs"
-V_TARGETS = None    # ["a1", "a2", "a3"]
+V_TARGETS = None  # ["a1", "a2", "a3"]
 
 # F_TITLE                                                   - 「文本」文本中的标题属性
 # F_CONTENT                                                 - 「文本」文本中的内容属性
@@ -43,8 +43,8 @@ O_TARGET = "SeriousDlqin2yrs"
 # IN_SOURCE                                                 - 正式输入文件
 # OUT_MODEL                                                 - 模型输出
 # OUT_RESULT                                                - 结果输出
-IN_PRE = "training.xlsx"
-IN_SOURCE = "cs-actor_training.csv"
+IN_PRE = "cs-training.csv"
+IN_SOURCE = "cs-training.csv"
 
 # -----------------------------------------------------------------------------------------------------
 #

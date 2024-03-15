@@ -24,7 +24,7 @@ import examination as ex
 # V_TARGETS                                                 - 目标属性（多个）
 V_ID = "B0001"
 V_TARGET = "Target"
-V_TARGETS = None    # ["a1", "a2", "a3"]
+V_TARGETS = None  # ["a1", "a2", "a3"]
 
 # F_TITLE                                                   - 「文本」文本中的标题属性
 # F_CONTENT                                                 - 「文本」文本中的内容属性
@@ -57,7 +57,7 @@ O_TARGET = "Predicted_Results"
 # OUT_MODEL                                                 - 模型输出
 # OUT_RESULT                                                - 结果输出
 IN_PRE = "Train_all.xlsx"
-IN_SOURCE = "Train_all.xlsx"
+IN_SOURCE = "Train_all.csv"
 
 # -----------------------------------------------------------------------------------------------------
 #
