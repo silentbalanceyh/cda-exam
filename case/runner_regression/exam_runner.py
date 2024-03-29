@@ -19,19 +19,19 @@ from exam_kit import *
 #
 # -----------------------------------------------------------------------------------------------------
 # 步骤1 - Splitting
-# run_splitting()
+run_splitting()
 
 # 步骤2 - Feature
-# run_feature()
+run_feature()
 
 # 步骤3 - Modeling
-# run_model()
+run_model()
 
 # 步骤4 - Predict
-# run_predict()
+run_predict()
 
 # 步骤5 - Score
-# run_score()
+run_score()
 # -----------------------------------------------------------------------------------------------------
 #
 # 「联合执行」

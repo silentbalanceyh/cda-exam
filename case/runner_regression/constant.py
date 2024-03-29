@@ -24,7 +24,7 @@ import examination as ex
 # V_TARGETS                                                 - 目标属性（多个）
 V_ID = "Id"
 V_TARGET = "SalePrice"
-V_TARGETS = None    # ["a1", "a2", "a3"]
+V_TARGETS = None  # ["a1", "a2", "a3"]
 
 # F_TITLE                                                   - 「文本」文本中的标题属性
 # F_CONTENT                                                 - 「文本」文本中的内容属性
@@ -32,13 +32,13 @@ V_TARGETS = None    # ["a1", "a2", "a3"]
 F_TITLE = "title"
 F_CONTENT = "content"
 F_FEATURES = [
-    'MSSubClass','MSZoning','Street','Alley','LotShape','LandContour','Utilities',
-    'LotConfig','LandSlope','Neighborhood','Condition1','Condition2','BldgType','HouseStyle',
-    'RoofStyle','RoofMatl','Exterior1st','Exterior2nd','MasVnrType','ExterQual','ExterCond',
-    'Foundation','BsmtQual','BsmtCond','BsmtExposure','BsmtFinType1','BsmtFinType2','Heating',
-    'HeatingQC','CentralAir','Electrical','KitchenQual','Functional','FireplaceQu',
-    'GarageType','GarageFinish','GarageQual','GarageCond','PavedDrive','PoolQC','Fence',
-    'MiscFeature','SaleType','SaleCondition'
+    'MSSubClass', 'MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities',
+    'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle',
+    'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond',
+    'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating',
+    'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu',
+    'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence',
+    'MiscFeature', 'SaleType', 'SaleCondition'
 ]
 
 # O_ID                                                      - 输出——主键
@@ -51,7 +51,7 @@ O_TARGET = "SalePrice"
 # IN_SOURCE                                                 - 正式输入文件
 # OUT_MODEL                                                 - 模型输出
 # OUT_RESULT                                                - 结果输出
-IN_PRE = "training.xlsx"
+IN_PRE = "train.csv"
 IN_SOURCE = "train.csv"
 
 # -----------------------------------------------------------------------------------------------------

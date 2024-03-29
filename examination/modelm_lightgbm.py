@@ -1,6 +1,4 @@
-gitfrom
-lightgbm
-import LGBMClassifier
+from lightgbm import LGBMClassifier
 from sklearn.multiclass import OneVsRestClassifier
 
 from examination.toolkit import *
