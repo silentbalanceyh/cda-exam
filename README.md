@@ -110,6 +110,8 @@ import examination as ex
 |:----------------------------|:---------------------|
 | `runner_binary_categorical` | 二分类案例，常用Excel标准输入格式。 |
 | `runner_binary_numerical`   | 二分类案例，数值输入格式。        |
+| `runner_binary_textualized` | 二分类案例，文本输入格式。        |
+| `runner_regression`         | 回归案例。                |
 
 ### 4.2. 执行流程
 
