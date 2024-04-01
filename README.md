@@ -16,6 +16,7 @@
 * [03.二分类-数值输入](ppt/03.二分类-数值输入.pptx)
 * [04.二分类-文本输入](ppt/04.二分类-文本输入.pptx)
 * [05.回归](ppt/05.回归.pptx)
+* [06.模型选择](ppt/06.模型选择.pptx)
 
 ## 2. 依赖库
 
@@ -47,13 +48,13 @@ conda install catboost
 ./version.sh
 # 输出信息如
 xgboost -> 1.7.3
-catboost -> 1.2
+catboost -> 1.2.3
 lightgbm -> 4.1.0
 sklearn -> 1.2.2
 imblearn -> 0.11.0
 gensim -> 4.3.0
 pandas -> 2.1.4
-numpy -> 1.26.3
+numpy -> 1.26.4
 ```
 
 ## 3. 考试库
