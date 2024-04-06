@@ -19,21 +19,22 @@ from exam_kit import *
 #
 # -----------------------------------------------------------------------------------------------------
 # 步骤0 - Revert
-# run_revert()
+run_revert()
 # 步骤1 - Splitting
-# run_splitting()
+run_splitting()
 
 # 步骤2 - Feature
-# run_feature()
+run_feature()
 
 # 步骤3 - Modeling
-# run_model()
+run_model()
 
 # 步骤4 - Predict
-# run_predict()
+run_predict()
 
 # 步骤5 - Score
-# run_score()
+run_score()
+
 
 # 步骤6：额外步骤两次转换
 def run_y1():
@@ -44,11 +45,14 @@ def run_y1():
     i_true = ex.y_result_1(i_true, V_TARGET)
     ex.out_runtime(i_true, "actor_results1.csv")
 
+
 def run_y2():
     i_before = ex.in_runtime("actor_results1.csv")
     i_before = ex.y_transform(i_before, f_source=V_TARGETS, f_target=V_TARGET)
     ex.out_runtime(i_before, "actor_results2.csv")
 
+
+run_y1()
 run_y2()
 # -----------------------------------------------------------------------------------------------------
 #
