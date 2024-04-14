@@ -48,7 +48,7 @@ conda install catboost
 ```bash
 ./version.sh
 # 输出信息如
-xgboost -> 1.7.3
+xgboost -> 1.7.6
 catboost -> 1.2.3
 lightgbm -> 4.1.0
 sklearn -> 1.2.2
